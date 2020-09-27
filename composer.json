@@ -14,7 +14,7 @@
 
     "autoload": {
         "psr-4": {
-            "Tir\\Page\\": "src/"
+            "Tir\\Metadata\\": "src/"
         }
     },
 

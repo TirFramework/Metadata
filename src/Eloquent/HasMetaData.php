@@ -39,6 +39,7 @@ trait HasMetaData
     public function saveMetaData($data = [])
     {
         $data['meta_keywords'] = Arr::get($data, 'meta_keywords', []);
+        $data['meta_other'] = Arr::get($data, 'meta_other', []);
         $this->meta->fill([Crud::locale() => $data])->save();
     }
 }

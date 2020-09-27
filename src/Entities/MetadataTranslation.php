@@ -12,7 +12,7 @@ class MetadataTranslation extends TranslationModel
      *
      * @var array
      */
-    protected $fillable = ['meta_title','meta_keyword', 'meta_description','other_meta'];
+    protected $fillable = ['meta_title','meta_keywords', 'meta_description','meta_other','meta_custom'];
 
     /**
      * The attributes that should be cast to native types.
@@ -21,6 +21,6 @@ class MetadataTranslation extends TranslationModel
      */
     protected $casts = [
         'meta_keywords' => 'array',
-        'other_meta' => 'array',
+        'meta_other' => 'array',
     ];
 }

@@ -12,7 +12,7 @@ class CreateMetaDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('meta_data', function (Blueprint $table) {
+        Schema::create('metadata', function (Blueprint $table) {
             $table->increments('id');
             $table->morphs('entity');
             $table->timestamps();
@@ -26,6 +26,6 @@ class CreateMetaDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('meta_data');
+        Schema::dropIfExists('metadata');
     }
 }

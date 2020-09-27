@@ -2,8 +2,8 @@
 
 namespace Tir\Metadata\Entities;
 
-use Astrotomic\Translatable\Translatable;
 use Tir\Crud\Support\Eloquent\CrudModel;
+use Tir\Crud\Support\Eloquent\Translatable;
 use Tir\Crud\Support\Facades\Crud;
 
 class Metadata extends CrudModel
@@ -30,7 +30,7 @@ class Metadata extends CrudModel
      *
      * @var array
      */
-    public $translatedAttributes = ['meta_title','meta_keyword', 'meta_description','other_meta'];
+    public $translatedAttributes = ['meta_title','meta_keywords', 'meta_description','other_meta','meta_custom'];
 
 
     /**
