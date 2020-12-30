@@ -26,15 +26,11 @@ class MetadataServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
+
         if (! config('app.installed')) {
             return;
         }
-
-
-
-        $this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
-
-
 
     }
 
